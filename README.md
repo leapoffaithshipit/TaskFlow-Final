@@ -142,3 +142,5 @@ API Gateway	1M HTTP requests	$0
 S3 / DynamoDB	5GB + 25GB-month read/write	$0
 CloudWatch Logs	5GB storage + basic metrics	$0
 
+
+Made by | Hafiz Ridwan |
