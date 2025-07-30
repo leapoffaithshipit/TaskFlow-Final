@@ -112,13 +112,35 @@ The web app will be available at `http://localhost:3009`
   - React Navigation
   - Apollo Client
 
-## Contributing
+☁️ AWS Deployment Plan
+🔧 Architecture Overview
+Deploy the TaskFlow backend as a serverless GraphQL API using:
 
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+AWS Lambda – to host the Node.js GraphQL server
+
+Amazon API Gateway – to expose the HTTP endpoint (/graphql)
+
+Amazon DynamoDB or S3 + lowdb (for file-based storage) – for persistent task and user data (optional)
+
+AWS IAM – for access control
+
+AWS CloudWatch – for logs and monitoring
+
+🛠️ Services Used
+AWS Service	Purpose
+Lambda	Host the Node.js GraphQL handler
+API Gateway	Route HTTP requests to Lambda
+S3 (optional)	Store db.json if using lowdb
+DynamoDB (alt)	Scalable NoSQL for task/user data
+CloudWatch	Logging and debugging
+IAM	Permissions and role management
+
+💰 Estimated Costs (AWS Free Tier Eligible)
+Service	Free Tier Limit	Monthly Cost (Est.)
+Lambda	1M requests + 400K GB-seconds	$0
+API Gateway	1M HTTP requests	$0
+S3 / DynamoDB	5GB + 25GB-month read/write	$0
+CloudWatch Logs	5GB storage + basic metrics	$0
 
 ## License
 
