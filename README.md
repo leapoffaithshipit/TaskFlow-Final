@@ -143,4 +143,4 @@ S3 / DynamoDB	5GB + 25GB-month read/write	$0
 CloudWatch Logs	5GB storage + basic metrics	$0
 
 
-Made by | Hafiz Ridwan |
+Made by Hafiz Ridwan - https://goldilock.netlify.app/
