@@ -1,4 +1,4 @@
-# Todo Application
+# TaskFlow - To-Do List Application
 
 A full-stack To-do application with web and mobile clients, built with modern web technologies.
 
